@@ -1,0 +1,105 @@
+.first-container {
+    font-family: "Josefin Sans";
+    background-image: url("../img/mountain.png");
+    width: 1770px;
+    height: 820px;
+    margin: 0 auto;
+    color: #ffffff;
+
+    .first-container__text {
+        width: 1770px;
+        padding-top: 200px;
+        display: inline-block;
+        text-align: center;
+        margin-top: 60px;
+            
+    
+        .first-container__text_header {
+            font-size: 48px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 4.8px;
+        }
+    
+        .first-container__text_header_second {
+            font-size: 21px;
+            font-weight: 400;
+            letter-spacing: 6.42px;
+            margin-top: 5px;
+        }
+    }
+    
+    .first-container__search-form {
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+    
+        form {
+            position: relative;
+            width: 650px;
+        }
+              
+        input, button {
+            border: none;
+            outline: none;  
+        }
+              
+        input {
+            width: 500px;
+            height: 60px;
+            background: #fff;
+        }
+    
+        ::placeholder {
+            color: #999999;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 2.8px;
+            text-align: center;
+        }
+       
+        button {
+            height: 60px;
+            width: 150px;
+            position: absolute;
+            border: 1px solid #fff;
+            background-color: #5474fd;
+            color: #fff;
+            cursor: pointer;
+            
+            &:hover {
+                background-color: bisque;
+            }
+    
+            span {
+                font-family: Aleo;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 1.4px;
+            }  
+    
+            img {
+                position: relative;
+                left: 10px;
+                top: 5px;
+            }       
+        }
+    }
+    
+    .first-container__scroll {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 90px;
+    
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 2.8px;
+        }
+        
+    }
+}
