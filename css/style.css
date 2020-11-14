@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #333333;
+}
+
 .first-container {
   font-family: "Josefin Sans";
   background-image: url("../img/mountain.png");
@@ -284,6 +288,77 @@
           transition-duration: .8s;
 }
 
+.fourth-container {
+  width: 1770px;
+  height: 337px;
+  background-color: #333333;
+  margin: 0 auto;
+}
+
+.fourth-container .fourth-container__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
+.fourth-container .fourth-container__line .fourth-container__line_first-circle {
+  position: relative;
+  left: 370px;
+  top: 25px;
+  width: 610px;
+  height: 610px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 3px dashed rgba(255, 255, 255, 0.2);
+  border-bottom: 5px solid transparent;
+  border-radius: 600px 600px 600px 600px;
+}
+
+.fourth-container .fourth-container__line .fourth-container__line_second-circle {
+  position: relative;
+  left: 220px;
+  top: 25px;
+  width: 610px;
+  height: 610px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 3px dashed rgba(255, 255, 255, 0.2);
+  border-bottom: 5px solid transparent;
+  border-radius: 600px 600px 600px 600px;
+}
+
+.fourth-container .fourth-container__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  top: 90px;
+  left: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.fourth-container .fourth-container__block img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.fourth-container .fourth-container__block p {
+  color: #e8e8e8;
+  font-family: Aleo;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 30px;
+}
+
 .fifth-container {
   background-image: url("../img/Rectangle 414.png");
   width: 1770px;
@@ -488,5 +563,54 @@
 .seventh-container .seventh-container_block .seventh-container__text .seventh-container__text_text i {
   color: #5474fd;
   font-size: 16px;
+}
+
+.eighth-container {
+  width: 1770px;
+  height: 268px;
+  background-color: #232323;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.eighth-container .eighth-container__text {
+  text-align: center;
+  color: #fff;
+  font-family: "Josefin Sans";
+}
+
+.eighth-container .eighth-container__text .eighth-container__text_header {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 3.36px;
+  padding-top: 120px;
+}
+
+.eighth-container .eighth-container__text .eighth-container__text_text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1.6px;
+  padding-top: 10px;
+}
+
+.eighth-container .eighth-container_social {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.eighth-container .eighth-container_social i {
+  color: #fff;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.eighth-container .eighth-container_social i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: blue;
 }
 /*# sourceMappingURL=style.css.map */

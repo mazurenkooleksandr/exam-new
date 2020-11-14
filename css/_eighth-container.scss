@@ -1,0 +1,50 @@
+.eighth-container {
+    width: 1770px;
+    height: 268px;
+    background-color: #232323;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    .eighth-container__text {
+        text-align: center;
+        color: #fff;
+        font-family: "Josefin Sans";
+
+        .eighth-container__text_header {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 26px;
+            text-transform: uppercase;
+            letter-spacing: 3.36px;
+            padding-top: 120px;
+        }
+
+        .eighth-container__text_text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 1.6px;
+            padding-top: 10px;
+        }
+    
+    }
+
+    .eighth-container_social {
+        text-align: center;
+        padding-top: 30px;
+
+        i {
+            color: #fff;
+            padding-left: 12px;
+            padding-right: 12px;
+
+            &:hover {
+                transform: scale(1.5);
+                color: blue;
+            }
+        }
+
+        
+    }
+}
+
