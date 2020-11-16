@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @extend %message-border;
 
     .second-container__text {
         font-family: "Josefin Sans";

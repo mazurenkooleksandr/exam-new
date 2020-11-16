@@ -3,6 +3,7 @@
     height: 337px;
     background-color: #333333;
     margin: 0 auto;
+    @extend %message-border;
 
     .fourth-container__line {
         display: flex;

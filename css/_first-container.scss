@@ -5,6 +5,9 @@
     height: 820px;
     margin: 0 auto;
     color: #ffffff;
+    border-top: 10px solid #fff;
+    @extend %message-border;
+    
 
     .first-container__text {
         width: 1770px;
@@ -47,6 +50,9 @@
         input {
             width: 500px;
             height: 60px;
+            font-size: 24px;
+            padding-left: 20px;
+            padding-right: 20px;
             background: #fff;
         }
     
@@ -93,6 +99,7 @@
         align-items: center;
         flex-direction: column;
         padding-top: 90px;
+        cursor: pointer;
     
         p {
             font-size: 14px;

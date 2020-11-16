@@ -3,6 +3,7 @@
     width: 1770px;
     height: 700px;
     margin: 0 auto;
+    @extend %message-border;
 
     .fifth-container__text{
         width: 540px;

@@ -1,9 +1,11 @@
 .eighth-container {
-    width: 1770px;
+    width: 1790px;
     height: 268px;
     background-color: #232323;
     margin: 0 auto;
     box-sizing: border-box;
+    border-bottom: 10px solid #fff;
+    @extend %message-border;
 
     .eighth-container__text {
         text-align: center;
