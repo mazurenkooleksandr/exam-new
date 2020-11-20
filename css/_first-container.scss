@@ -11,6 +11,7 @@
     @extend %message-border;
     
     
+    
 
     .first-container__text {
         padding-top: 200px;
@@ -149,8 +150,10 @@
 
 @media screen and (max-width: 1800px) {
     .first-container {
-        width: 100%;
+        width: 98.5%;
         max-width: 1770px;
+        
+        
         
     }
 
@@ -158,23 +161,23 @@
 
 @media screen and (max-width: 1199px) {
     .first-container {
-        width: 100%;
-        max-width: 1179px;
-        
+        width: 98%;
+        max-width: 1199px;
     }
 }
 
 @media screen and (max-width: 991px) {
     .first-container {
-        width: 100%;
-        max-width: 991px; 
+        width: 97%;
+        max-width: 971px;   
     }
 }
 
 @media screen and (max-width: 767px) {
     .first-container {
-        width: 100%;
+        width: 96%;
         max-width: 767px;
+        
 
         .first-container__search-form {
         
@@ -192,14 +195,12 @@
                 width: 100%;
                 height: 60px;
                 position: relative;
-                margin-top: 20px;
-                     
+                margin-top: 20px;    
             }
  
         }
 
         .first-container__scroll {
-        
             p {
                 font-size: 18px;
             }
@@ -211,7 +212,7 @@
 
 @media screen and (max-width: 575px) {
     .first-container {
-        width: 100%;
+        width: 95%;
         max-width: 575px;
         
         .first-container__text {

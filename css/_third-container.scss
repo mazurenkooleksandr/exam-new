@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 1800px) {
     .third-container {
-        width: 100%;
+        width: 98.5% !important;
         max-width: 1770px; 
 
         .third-container__image {
@@ -97,8 +97,8 @@
 
 @media screen and (max-width: 1199px) {
     .third-container {
-        width: 100%;
-        max-width: 1179px;
+        width: 98% !important;
+        max-width: 1199px;
         
         .third-container__text {
             margin-right: 20px;
@@ -133,7 +133,7 @@
 
 @media screen and (max-width: 991px) {
     .third-container {
-        width: 100%;
+        width: 97% !important;
         max-width: 991px; 
 
         .third-container__text {
@@ -153,17 +153,24 @@
             }
     
             .third-container__text_button {
-                width: 100%;
+                width: 50%;
                 margin-top: 250px;
                 margin-left: 170px;
             }
         }
     
         .third-container__image {
-            margin-right: 170px;
+            
+            .third-container__image_second-picture {
+                margin-left: 0px;
+                width: 100%;
+                max-width: 350px;
+            }
     
             .third-container__image_second-picture {
                 margin-left: 0px;
+                width: 100%;
+                max-width: 350px;
             }
         }     
     }
@@ -171,7 +178,7 @@
 
 @media screen and (max-width: 767px) {
     .third-container {
-        width: 100%;
+        width: 96% !important;
         max-width: 767px;
         height: 100%;
         display: flex;
@@ -209,13 +216,6 @@
     
         .third-container__image {
             margin: 40px auto;
-           
-    
-            .third-container__image_second-picture {
-                width: 100%;
-                margin-left: 90px;
-                
-            }
         }   
     }
         
@@ -223,7 +223,7 @@
 
 @media screen and (max-width: 575px) {
     .third-container {
-        width: 100%;
+        width: 95% !important;
         max-width: 575px;
         height: 100%;
         display: flex;
@@ -265,7 +265,18 @@
             
     
             .third-container__image_second-picture {
-                margin: 0 auto;
+                margin-left: 0px;
+                width: 50%;
+                
+                max-width: 200px;
+                
+            }
+    
+            .third-container__image_second-picture {
+                margin-left: 0px;
+                width: 50%;
+                
+                max-width: 200px;
                 
             }
         }   
