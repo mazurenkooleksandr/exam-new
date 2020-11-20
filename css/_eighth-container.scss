@@ -1,9 +1,8 @@
 .eighth-container {
-    width: 1790px;
+    width: 1770px;
     height: 268px;
     background-color: #232323;
     margin: 0 auto;
-    box-sizing: border-box;
     border-bottom: 10px solid #fff;
     @extend %message-border;
 
@@ -51,45 +50,78 @@
 }
 
 @media screen and (max-width: 1800px) {
-    .third-container {
-        width: 100%;
-        max-width: 1770px; 
+    .eighth-container {
+        width: 98.5%;
+        max-width: 1770px;
     }
 }
 
 @media screen and (max-width: 1199px) {
-    .third-container {
-        width: 100%;
-        max-width: 1179px;  
+    .eighth-container {
+        width: 98%;
+        max-width: 1199px;
+          
     }
 }
 
 @media screen and (max-width: 991px) {
-    .third-container {
-        width: 100%;
-        max-width: 991px; 
-    }
-}
+    .eighth-container {
+        width: 97%;
+        max-width: 991px;
 
-@media screen and (max-width: 767px) {
-    .third-container {
-        width: 100%;
-        max-width: 767px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .third-container {
-        width: 100%;
-        max-width: 767px;
-    }
+        .eighth-container__text {
+            padding-bottom: 30px;
+    
+            .eighth-container__text_header {
+                padding-top: 50px;
         
+            }
+
+        }
+
+        .eighth-container_social {
+            padding-bottom: 30px;
+
+            .fab {
+                font-size: 30px;
+            }
+        }
+       
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .eighth-container {
+        width: 96%;
+        max-width: 767px;
+
+        .eighth-container__text {
+            padding-bottom: 30px;
+    
+            .eighth-container__text_header {
+                padding-top: 50px;
+        
+            }
+
+        }
+
+        .eighth-container_social {
+            padding-bottom: 30px;
+
+            .fab {
+                font-size: 30px;
+            }
+        }
+        
+    }
 }
 
 @media screen and (max-width: 575px) {
-    .third-container {
-        width: 100%;
+    .eighth-container {
+        width: 95%;
         max-width: 575px;
+        
+        
     }
 
 }
