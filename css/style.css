@@ -684,7 +684,7 @@ body {
 
 @media screen and (max-width: 1800px) {
   .third-container {
-    width: 98.5% !important;
+    width: 98.5%;
     max-width: 1770px;
   }
   .third-container .third-container__image {
@@ -697,7 +697,7 @@ body {
 
 @media screen and (max-width: 1199px) {
   .third-container {
-    width: 98% !important;
+    width: 98%;
     max-width: 1199px;
   }
   .third-container .third-container__text {
@@ -727,7 +727,7 @@ body {
 
 @media screen and (max-width: 991px) {
   .third-container {
-    width: 97% !important;
+    width: 97%;
     max-width: 991px;
   }
   .third-container .third-container__text {
@@ -763,7 +763,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .third-container {
-    width: 96% !important;
+    width: 96%;
     max-width: 767px;
     height: 100%;
     display: -webkit-box;
@@ -805,7 +805,7 @@ body {
 
 @media screen and (max-width: 575px) {
   .third-container {
-    width: 95% !important;
+    width: 95%;
     max-width: 575px;
     height: 100%;
     display: -webkit-box;
@@ -1279,23 +1279,100 @@ body {
   }
 }
 
+/*.sixth-container {
+    background-image: url("../img/Rectangle\ 4141.png");
+    width: 1770px;
+    height: 700px;
+    margin: 0 auto;
+    @extend %message-border;
+
+    .sixth-container__text{
+        width: 540px;
+        height: 371px;
+        background-color: rgba(35, 35, 35, 0.8);;
+        color: #fff;
+        font-family: "Josefin Sans";
+        padding-left: 30px;
+        position: relative;
+        top: 230px;
+        left: 930px;
+
+        .sixth-container__text_header{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            letter-spacing: 1.5px;
+            padding-top: 40px;
+        }
+
+        .sixth-container__text_header_second {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+
+        .sixth-container__text_text {
+            width: 518px;
+            height: 68px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .sixth-container__text_button {
+            width: 225px;
+            height: 45px;
+            background-color: #5474fd;
+            font-family: Aleo;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-top: 40px;
+            text-align: center;
+            padding-top: 20px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: hotpink;
+            }
+        }
+    }
+    
+}*/
 .sixth-container {
   background-image: url("../img/Rectangle 4141.png");
-  width: 1770px;
+  width: 100%;
+  max-width: 1770px;
   height: 700px;
   margin: 0 auto;
+  position: relative;
 }
 
 .sixth-container .sixth-container__text {
-  width: 540px;
-  height: 371px;
   background-color: rgba(35, 35, 35, 0.8);
   color: #fff;
   font-family: "Josefin Sans";
   padding-left: 30px;
-  position: relative;
-  top: 230px;
-  left: 930px;
+  position: absolute;
+  width: 50%;
+  max-width: 500px;
+  height: 50%;
+  max-height: 470px;
+  left: 70%;
+  top: 50%;
+  -webkit-transform: translateX(-70%) translateY(-50%);
+          transform: translateX(-70%) translateY(-50%);
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
 }
 
 .sixth-container .sixth-container__text .sixth-container__text_header {
@@ -1317,7 +1394,8 @@ body {
 }
 
 .sixth-container .sixth-container__text .sixth-container__text_text {
-  width: 518px;
+  width: 90%;
+  max-width: 518px;
   height: 68px;
   font-size: 14px;
   font-weight: 400;
@@ -1326,7 +1404,13 @@ body {
   margin-top: 30px;
 }
 
+.sixth-container .sixth-container__text a {
+  text-decoration: none;
+  color: white;
+}
+
 .sixth-container .sixth-container__text .sixth-container__text_button {
+  display: block;
   width: 225px;
   height: 45px;
   background-color: #5474fd;
@@ -1347,51 +1431,172 @@ body {
   background-color: hotpink;
 }
 
+.sixth-container .sixth-container__text:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1) translateX(-60%) translateY(-45%);
+          transform: scale(1.1) translateX(-60%) translateY(-45%);
+}
+
 @media screen and (max-width: 1800px) {
-  .third-container {
-    width: 100%;
+  .sixth-container {
+    width: 98.5%;
     max-width: 1770px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .third-container {
-    width: 100%;
+  .sixth-container {
+    width: 98%;
     max-width: 1179px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .third-container {
-    width: 100%;
+  .sixth-container {
+    width: 97%;
     max-width: 991px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .third-container {
-    width: 100%;
+  .sixth-container {
+    width: 96%;
     max-width: 767px;
+  }
+  .sixth-container .sixth-container__text {
+    width: 80%;
+  }
+  .sixth-container .sixth-container__text .sixth-container__text_text {
+    font-size: 18px;
+  }
+  .sixth-container .sixth-container__text .sixth-container__text_button {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .sixth-container {
+    width: 95%;
+    max-width: 575px;
+  }
+  .sixth-container .sixth-container__text {
+    width: 88%;
+    height: 90%;
+  }
+  .sixth-container .sixth-container__text .sixth-container__text_button {
+    width: 92%;
+    margin-top: 180px;
+  }
+}
+
+.seventh-container {
+  background-image: url("../img/Rectangle 4142.png");
+  width: 100%;
+  max-width: 1770px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.seventh-container .seventh-container__header {
+  color: #ffffff;
+  font-family: Aleo;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.seventh-container .seventh-container_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 94px;
+}
+
+.seventh-container .seventh-container_block .seventh-container__image:hover {
+  opacity: 0.5;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.seventh-container .seventh-container_block .seventh-container__text {
+  width: 665px;
+  height: 284px;
+  background-color: #333333;
+  padding-left: 60px;
+  padding-top: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.seventh-container .seventh-container_block .seventh-container__text .seventh-container__text_header {
+  color: #fefefe;
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.seventh-container .seventh-container_block .seventh-container__text .seventh-container__text_text {
+  width: 551px;
+  height: 136px;
+  color: #e8e8e8;
+  font-family: "Josefin Sans";
+  font-size: 13.5px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.seventh-container .seventh-container_block .seventh-container__text .seventh-container__text_text i {
+  color: #5474fd;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1800px) {
+  .seventh-container {
+    width: 98.5%;
+    max-width: 1770px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .seventh-container {
+    width: 98%;
+    max-width: 1179px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .seventh-container {
+    width: 97%;
+    max-width: 991px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .third-container {
-    width: 100%;
+  .seventh-container {
+    width: 96%;
     max-width: 767px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  .third-container {
-    width: 100%;
+  .seventh-container {
+    width: 95%;
     max-width: 575px;
   }
 }
 
-/*@import "seventh-container";
-@import "eighth-container";*/
-.first-container, .second-container, .third-container, .fourth-container, .fifth-container, .sixth-container {
+/*@import "eighth-container";*/
+.first-container, .second-container, .third-container, .fourth-container, .fifth-container, .sixth-container, .seventh-container {
   border-right: 10px solid #fff;
   border-left: 10px solid #fff;
 }
