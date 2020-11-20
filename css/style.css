@@ -847,16 +847,7 @@ body {
   }
   .third-container .third-container__image {
     margin: 40px auto;
-  }
-  .third-container .third-container__image .third-container__image_second-picture {
-    margin-left: 0px;
-    width: 50%;
-    max-width: 200px;
-  }
-  .third-container .third-container__image .third-container__image_second-picture {
-    margin-left: 0px;
-    width: 50%;
-    max-width: 200px;
+    display: none;
   }
 }
 
@@ -1485,7 +1476,7 @@ body {
     max-width: 575px;
   }
   .sixth-container .sixth-container__text {
-    width: 88%;
+    width: 86%;
     height: 90%;
   }
   .sixth-container .sixth-container__text .sixth-container__text_button {
