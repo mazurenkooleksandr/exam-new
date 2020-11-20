@@ -1,19 +1,22 @@
 .first-container {
     font-family: "Josefin Sans";
     background-image: url("../img/mountain.png");
-    width: 1770px;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1770px;
     height: 820px;
     margin: 0 auto;
     color: #ffffff;
     border-top: 10px solid #fff;
     @extend %message-border;
     
+    
 
     .first-container__text {
-        width: 1770px;
         padding-top: 200px;
-        display: inline-block;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         margin-top: 60px;
             
     
@@ -66,8 +69,8 @@
         }
        
         button {
-            height: 60px;
             width: 150px;
+            height: 60px;
             position: absolute;
             border: 1px solid #fff;
             background-color: #5474fd;
@@ -107,6 +110,160 @@
             line-height: 26px;
             letter-spacing: 2.8px;
         }
+
+        .arrow-down {
+            margin: 30px;
+        }
+        .arrow-down span {
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-bottom: 5px solid #fff;
+            border-right: 5px solid #fff;
+            transform: rotate(45deg);
+            margin: -8px;
+            animation: arrow-down 2s infinite;
+        }
+        .arrow-down span:nth-child(2){
+            animation-delay: -0.2s;
+        }
+        .arrow-down span:nth-child(3){
+            animation-delay: -0.4s;
+        }
+        @keyframes arrow-down {
+            0%{
+                opacity: 0;
+                transform: rotate(45deg) translate(-20px,-20px);
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+                transform: rotate(45deg) translate(20px,20px);
+            }
+        }
         
     }
 }
+
+@media screen and (max-width: 1800px) {
+    .first-container {
+        width: 100%;
+        max-width: 1770px;
+        
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+    .first-container {
+        width: 100%;
+        max-width: 1179px;
+        
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .first-container {
+        width: 100%;
+        max-width: 991px; 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .first-container {
+        width: 100%;
+        max-width: 767px;
+
+        .first-container__search-form {
+        
+            form {
+                width: 100%;
+                padding: 20px;
+            }
+                  
+            input {
+                width: 100%;
+                height: 60px;
+            }
+        
+            button {
+                width: 100%;
+                height: 60px;
+                position: relative;
+                margin-top: 20px;
+                     
+            }
+ 
+        }
+
+        .first-container__scroll {
+        
+            p {
+                font-size: 18px;
+            }
+            
+        }
+
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .first-container {
+        width: 100%;
+        max-width: 575px;
+        
+        .first-container__text {
+            padding-top: 150px;
+                
+            .first-container__text_header {
+                font-size: 38px;
+            }
+        
+            .first-container__text_header_second {
+                font-size: 15px;
+                margin-top: 5px;
+            }
+        }
+        
+        .first-container__search-form {
+            padding-top: 60px;
+           
+        
+            form {
+                width: 100%;
+                padding: 20px;
+            }
+                  
+            input {
+                width: 100%;
+                
+            }
+        
+            ::placeholder {
+                font-size: 14px; 
+                letter-spacing: .9px; 
+            }
+           
+            button {
+                width: 100%;
+                position: relative;
+                margin-top: 20px;      
+            }
+        }
+        
+        .first-container__scroll {
+        
+            p {
+                font-size: 18px;
+            }
+            
+        }
+    }
+    
+
+}
+
+
+

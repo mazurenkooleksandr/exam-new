@@ -1,6 +1,7 @@
 .fifth-container {
     background-image: url("../img/Rectangle\ 414.png");
-    width: 1770px;
+    width: 100%;
+    max-width: 1770px;
     height: 700px;
     margin: 0 auto;
     @extend %message-border;
@@ -66,4 +67,48 @@
         }
     }
     
+}
+
+@media screen and (max-width: 1800px) {
+    .fifth-container {
+        width: 100%;
+        max-width: 1770px; 
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .fifth-container {
+        width: 100%;
+        max-width: 1179px;  
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .fifth-container {
+        width: 100%;
+        max-width: 991px; 
+        
+        .fifth-container__text {
+            position: relative;
+            left: 170px;
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .fifth-container {
+        width: 100%;
+        max-width: 767px;
+    }
+        
+}
+
+@media screen and (max-width: 575px) {
+    .fifth-container {
+        width: 100%;
+        max-width: 575px;
+    }
+
 }

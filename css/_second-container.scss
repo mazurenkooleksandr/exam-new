@@ -1,5 +1,6 @@
 .second-container {
-    width: 1770px;
+    width: 100%;
+    max-width: 1770px;
     height: 80px;
     background-color: #5474fd;
     color: #ffffff;
@@ -17,6 +18,10 @@
         text-align: left;
         text-transform: uppercase;
         letter-spacing: 2.4px;
+    }
+
+    .second-container__hamburger-menu {
+        display: none;
     }
     
     .second-container__menu  {
@@ -44,4 +49,249 @@
         }     
     }  
 }
+
+@media screen and (max-width: 1800px) {
+    .second-container {
+        width: 100%;
+        max-width: 1770px;
+        
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+    .second-container {
+        width: 100%;
+        max-width: 1179px;
+        
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .second-container {
+        width: 100%;
+        max-width: 991px; 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .second-container {
+        width: 100%;
+        max-width: 767px;
+
+        .second-container__text {
+            margin-left: 50px;
+            
+        }
+
+        .second-container__hamburger-menu {
+            display: block;
+        }
+        
+        .second-container__menu  {
+            display: none;
+        } 
+        
+        #menu__toggle {
+            opacity: 0;
+        }
+        
+        .second-container__menu__btn {
+            display: flex;  
+            position: relative;
+            top: 0px;
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+            z-index: 1;
+            margin-top: 455px;
+            margin-left: 200px;
+        }
+
+        .second-container__menu__btn > span,
+        .second-container__menu__btn > span::before,
+        .second-container__menu__btn > span::after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+        
+        }
+        .second-container__menu__btn > span::before {
+            content: '';
+            top: -8px;
+          
+        }
+
+        .second-container__menu__btn > span::after {
+            content: '';
+            top: 8px;
+        }
+          
+        .second-container__menu__box {
+            display: block;
+            position: relative;
+            visibility: hidden;
+            top: 0;
+            left: -100%;
+            width: 300px;
+            height: 100%;
+            margin: 0;
+            padding: 80px 0;
+            list-style: none;
+            text-align: center;
+            background-color: #5474fd;
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        }
+
+        .second-container__menu__item {
+            display: block;
+            padding: 22px 24px;
+            margin-top: 5px;
+            border: 1px solid #fff;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .second-container__menu__item:hover {
+            background-color: #CFD8DC;
+        }
+
+        #menu__toggle:checked ~ .second-container__menu__btn > span {
+            transform: rotate(45deg);
+        }
+
+        #menu__toggle:checked ~ .second-container__menu__btn > span::before {
+            top: 0;
+            transform: rotate(0);
+        }
+
+        #menu__toggle:checked ~ .second-container__menu__btn > span::after {
+            top: 0;
+            transform: rotate(90deg);
+        }
+
+        #menu__toggle:checked ~ .second-container__menu__box {
+            visibility: visible;
+            left: 0;
+        }    
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .second-container {
+        width: 100%;
+        max-width: 575px;
+
+        .second-container__text {
+            position: relative;
+            left: 190px;
+            
+        }
+    
+
+        .second-container__hamburger-menu {
+            display: block;
+        }
+            
+        .second-container__menu  {
+            display: none;
+        } 
+            
+        #menu__toggle {
+            opacity: 0;
+        }
+            
+        .second-container__menu__btn {
+            display: flex;  
+            position: relative;
+            top: 0px;
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+            z-index: 1;
+            margin-top: 455px;
+            margin-right: 270px;     
+        }
+    
+        .second-container__menu__btn > span,
+        .second-container__menu__btn > span::before,
+        .second-container__menu__btn > span::after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            
+        }
+        .second-container__menu__btn > span::before {
+            content: '';
+            top: -8px;   
+        }
+    
+        .second-container__menu__btn > span::after {
+            content: '';
+            top: 8px;
+        }
+              
+        .second-container__menu__box {
+            display: block;
+            position: relative;
+            visibility: hidden;
+            top: 0;
+            left: -100%;
+            width: 250px;
+            height: 100%;
+            margin: 0;
+            padding: 80px 0;
+            list-style: none;
+            text-align: center;
+            background-color: #5474fd;
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        }
+    
+        .second-container__menu__item {
+            display: block;
+            padding: 22px 24px;
+            margin-top: 5px;
+            border: 1px solid #fff;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    
+        .second-container__menu__item:hover {
+            background-color: #CFD8DC;
+        }
+    
+        #menu__toggle:checked ~ .second-container__menu__btn > span {
+            transform: rotate(45deg);
+        }
+    
+        #menu__toggle:checked ~ .second-container__menu__btn > span::before {
+            top: 0;
+            transform: rotate(0);
+        }
+    
+        #menu__toggle:checked ~ .second-container__menu__btn > span::after {
+            top: 0;
+            transform: rotate(90deg);
+        }
+    
+        #menu__toggle:checked ~ .second-container__menu__box {
+            visibility: visible;
+            left: 0;
+        }    
+        
+    }
+}
+        
+
+        
 
